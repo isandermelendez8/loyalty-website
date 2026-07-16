@@ -17,16 +17,16 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "LOYALTY | Luxury Beauty Studio for Women",
   description:
-    "LOYALTY is a luxury women's beauty studio in Miami Beach. Hair styling, beauty treatments, tattoos, piercings, and self-care by expert female professionals.",
+    "LOYALTY is a luxury women's studio in Miami Beach. Braids, piercings, hair straightening, blow-dry, and more. Tattoos coming soon.",
   keywords: [
     "women salon",
-    "beauty studio",
+    "braids Miami",
+    "piercings",
+    "hair straightening",
+    "blow dry",
     "women only salon",
     "Miami Beach",
     "LOYALTY",
-    "hair styling",
-    "women tattoos",
-    "beauty services",
   ],
   openGraph: {
     title: "LOYALTY | Luxury Beauty Studio for Women",

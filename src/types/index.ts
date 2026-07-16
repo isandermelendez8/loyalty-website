@@ -2,13 +2,15 @@ export type Locale = "en" | "es";
 
 export interface Service {
   id: string;
-  category: "haircuts" | "styling" | "tattoos" | "piercings" | "beauty";
+  category: "braids" | "piercings" | "hair" | "tattoos";
   image: string;
   priceEn: string;
   priceEs: string;
   durationEn: string;
   durationEs: string;
   featured?: boolean;
+  available?: boolean;
+  comingSoon?: boolean;
 }
 
 export interface Employee {
@@ -45,7 +47,7 @@ export interface Package {
 export interface GalleryItem {
   id: string;
   image: string;
-  category: "haircuts" | "tattoos" | "studio" | "beforeafter";
+  category: "braids" | "piercings" | "hair" | "studio" | "beforeafter";
   titleEn: string;
   titleEs: string;
 }
@@ -79,6 +81,7 @@ export interface BusinessInfo {
   zip: string;
   country: string;
   mapEmbedUrl: string;
+  mapLinkUrl: string;
   mapDirectionsUrl: string;
   hours: { dayEn: string; dayEs: string; hours: string; closed?: boolean }[];
 }

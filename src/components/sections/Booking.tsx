@@ -4,7 +4,7 @@ import { useState, useEffect, useMemo, useCallback } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Instagram, MessageCircle, Loader2 } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { services, serviceNames } from "@/data/services";
+import { getBookableServices, serviceNames } from "@/data/services";
 import { businessInfo } from "@/data/business";
 import { formatDateISO, isDateBookable } from "@/lib/booking/rules";
 import { getWhatsAppBookingUrl } from "@/lib/utils";
@@ -116,9 +116,11 @@ export default function Booking() {
     return days;
   }, [currentMonth]);
 
+  const bookableServices = getBookableServices();
+
   const filteredEmployees = useMemo(() => {
     if (!form.serviceId) return employees;
-    const service = services.find((s) => s.id === form.serviceId);
+    const service = bookableServices.find((s) => s.id === form.serviceId);
     if (!service) return employees;
     return employees.filter((e) => e.specialties.includes(service.category));
   }, [form.serviceId, employees]);
@@ -230,7 +232,7 @@ export default function Booking() {
                 <select value={form.serviceId} onChange={(e) => setForm({ ...form, serviceId: e.target.value, employeeId: "" })}
                   className="w-full px-4 py-3 rounded-xl bg-luxury-black/50 border border-luxury-border focus:border-luxury-gold/50 focus:outline-none text-luxury-cream transition-colors" required>
                   <option value="">{t("booking.selectService")}</option>
-                  {services.map((s) => (
+                  {bookableServices.map((s) => (
                     <option key={s.id} value={s.id}>
                       {serviceNames[s.id]?.[locale]} - {s[locale === "en" ? "priceEn" : "priceEs"]}
                     </option>

@@ -16,14 +16,19 @@ export const translations: Record<Locale, Record<string, string>> = {
     // Hero
     "hero.badge": "Women Only",
     "hero.slogan": "Luxury Beauty for Women",
-    "hero.subtitle": "A sanctuary designed exclusively for women. Experience premium hair, beauty, tattoos, and self-care in Miami Beach.",
+    "hero.subtitle": "Braids, piercings, and premium hair services — tattoos coming soon. A luxury sanctuary for women in Miami Beach.",
     "hero.book": "Book Now",
     "hero.contact": "Contact Us",
     "hero.scroll": "Scroll to explore",
 
     // Services
     "services.title": "Our Services",
-    "services.subtitle": "Premium services crafted exclusively for women",
+    "services.subtitle": "Now booking braids, piercings & hair services",
+    "services.nowAvailable": "Now Available",
+    "services.nowAvailableList": "Braids • Piercings • Hair Straightening • Blow-Dry • Hair Wash • Full Hair Service",
+    "services.available": "Available",
+    "services.comingSoon": "Coming Soon",
+    "services.moreComingSoon": "More services coming soon — stay tuned!",
     "services.price": "Price",
     "services.duration": "Duration",
     "services.book": "Book",
@@ -109,10 +114,9 @@ export const translations: Record<Locale, Record<string, string>> = {
     "location.address": "Address",
     "location.hours": "Opening Hours",
     "location.contact": "Contact",
+    "location.openMap": "Open in Google Maps",
     "location.directions": "Get Directions",
     "location.closed": "Closed",
-
-    // Contact
     "contact.title": "Get In Touch",
     "contact.subtitle": "We'd love to hear from you",
     "contact.name": "Your Name",
@@ -129,8 +133,9 @@ export const translations: Record<Locale, Record<string, string>> = {
     "gallery.title": "Our Gallery",
     "gallery.subtitle": "Explore our work and studio",
     "gallery.all": "All",
-    "gallery.haircuts": "Hair",
-    "gallery.tattoos": "Tattoos",
+    "gallery.braids": "Braids",
+    "gallery.piercings": "Piercings",
+    "gallery.hair": "Hair",
     "gallery.studio": "Studio",
     "gallery.beforeafter": "Before & After",
 
@@ -163,14 +168,19 @@ export const translations: Record<Locale, Record<string, string>> = {
     // Hero
     "hero.badge": "Solo Mujeres",
     "hero.slogan": "Belleza de Lujo para Mujeres",
-    "hero.subtitle": "Un santuario diseñado exclusivamente para mujeres. Experimenta cabello, belleza, tatuajes y autocuidado premium en Miami Beach.",
+    "hero.subtitle": "Trenzas, piercings y servicios premium de cabello — tatuajes próximamente. Un santuario de lujo para mujeres en Miami Beach.",
     "hero.book": "Reservar Ahora",
     "hero.contact": "Contáctanos",
     "hero.scroll": "Desplázate para explorar",
 
     // Services
     "services.title": "Nuestros Servicios",
-    "services.subtitle": "Servicios premium creados exclusivamente para mujeres",
+    "services.subtitle": "Reserva trenzas, piercings y servicios de cabello",
+    "services.nowAvailable": "Disponible Ahora",
+    "services.nowAvailableList": "Trenzas • Piercings • Alisado • Secado • Lavado • Servicio Completo",
+    "services.available": "Disponible",
+    "services.comingSoon": "Próximamente",
+    "services.moreComingSoon": "Más servicios próximamente — ¡mantente atenta!",
     "services.price": "Precio",
     "services.duration": "Duración",
     "services.book": "Reservar",
@@ -256,10 +266,9 @@ export const translations: Record<Locale, Record<string, string>> = {
     "location.address": "Dirección",
     "location.hours": "Horario de Atención",
     "location.contact": "Contacto",
+    "location.openMap": "Abrir en Google Maps",
     "location.directions": "Cómo Llegar",
     "location.closed": "Cerrado",
-
-    // Contact
     "contact.title": "Contáctanos",
     "contact.subtitle": "Nos encantaría saber de ti",
     "contact.name": "Tu Nombre",
@@ -276,8 +285,9 @@ export const translations: Record<Locale, Record<string, string>> = {
     "gallery.title": "Nuestra Galería",
     "gallery.subtitle": "Explora nuestro trabajo y estudio",
     "gallery.all": "Todos",
-    "gallery.haircuts": "Cabello",
-    "gallery.tattoos": "Tatuajes",
+    "gallery.braids": "Trenzas",
+    "gallery.piercings": "Piercings",
+    "gallery.hair": "Cabello",
     "gallery.studio": "Estudio",
     "gallery.beforeafter": "Antes y Después",
 

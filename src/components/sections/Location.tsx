@@ -1,10 +1,11 @@
 "use client";
 
+import { motion } from "framer-motion";
+import { MapPin, Phone, Mail, Clock, ExternalLink, Navigation } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { businessInfo } from "@/data/business";
 import SectionTitle, { AnimatedSection } from "../ui/SectionTitle";
 import Button from "../ui/Button";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export default function Location() {
   const { locale, t } = useLanguage();
@@ -17,65 +18,84 @@ export default function Location() {
           subtitle={t("location.subtitle")}
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <AnimatedSection>
-            <div className="glass-card overflow-hidden rounded-2xl h-[400px] lg:h-full min-h-[400px]">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229359.9183757427!2d-80.2102185!3d25.782545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b69d4c5c5c5d%3A0x8b5c5c5c5c5c5c5c!2sMiami%20Beach%2C%20FL!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
-                style={{ border: 0, minHeight: "400px" }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="LOYALTY Location"
-              />
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+          <AnimatedSection className="lg:col-span-3">
+            <div className="glass-card overflow-hidden rounded-2xl relative group">
+              <div className="relative h-[350px] sm:h-[450px] lg:h-[500px]">
+                <iframe
+                  src={businessInfo.mapEmbedUrl}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="LOYALTY Location Map"
+                  className="absolute inset-0 w-full h-full"
+                />
+                <motion.div
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ type: "spring", damping: 12 }}
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full pointer-events-none z-10"
+                >
+                  <div className="flex flex-col items-center">
+                    <MapPin className="w-10 h-10 text-luxury-gold drop-shadow-lg fill-luxury-gold/30" />
+                    <span className="mt-1 px-3 py-1 rounded-full bg-luxury-black/80 backdrop-blur text-luxury-gold text-xs font-bold border border-luxury-gold/30">
+                      LOYALTY
+                    </span>
+                  </div>
+                </motion.div>
+              </div>
+              <div className="p-4 border-t border-luxury-border/30 flex flex-col sm:flex-row gap-3">
+                <a
+                  href={businessInfo.mapLinkUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl glass hover:bg-luxury-gold/10 transition-colors text-luxury-cream text-sm font-medium"
+                >
+                  <ExternalLink className="w-4 h-4 text-luxury-gold" />
+                  {t("location.openMap")}
+                </a>
+                <a
+                  href={businessInfo.mapDirectionsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl bg-luxury-gold/10 hover:bg-luxury-gold/20 border border-luxury-gold/30 transition-colors text-luxury-gold text-sm font-medium"
+                >
+                  <Navigation className="w-4 h-4" />
+                  {t("location.directions")}
+                </a>
+              </div>
             </div>
           </AnimatedSection>
 
-          <AnimatedSection delay={0.2}>
-            <div className="space-y-6">
-              <div className="glass-card p-6">
-                <div className="flex items-start gap-4">
-                  <MapPin className="w-6 h-6 text-luxury-gold shrink-0 mt-1" />
+          <AnimatedSection delay={0.2} className="lg:col-span-2">
+            <div className="space-y-4 h-full flex flex-col">
+              <div className="glass-card p-5">
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-luxury-gold shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-luxury-cream mb-1">
-                      {t("location.address")}
-                    </h4>
-                    <p className="text-luxury-cream/70">
-                      {businessInfo.address}
-                      <br />
-                      {businessInfo.city}, {businessInfo.state} {businessInfo.zip}
-                      <br />
+                    <h4 className="font-semibold text-luxury-cream mb-1">{t("location.address")}</h4>
+                    <p className="text-luxury-cream/70 text-sm leading-relaxed">
+                      {businessInfo.address}<br />
+                      {businessInfo.city}, {businessInfo.state} {businessInfo.zip}<br />
                       {businessInfo.country}
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="glass-card p-6">
-                <div className="flex items-start gap-4">
-                  <Clock className="w-6 h-6 text-luxury-gold shrink-0 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-luxury-cream mb-3">
-                      {t("location.hours")}
-                    </h4>
-                    <div className="space-y-2">
+              <div className="glass-card p-5 flex-1">
+                <div className="flex items-start gap-3">
+                  <Clock className="w-5 h-5 text-luxury-gold shrink-0 mt-1" />
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-luxury-cream mb-3">{t("location.hours")}</h4>
+                    <div className="space-y-1.5">
                       {businessInfo.hours.map((h) => (
-                        <div
-                          key={h.dayEn}
-                          className="flex justify-between text-sm gap-4"
-                        >
-                          <span className="text-luxury-cream/70">
-                            {h[locale === "en" ? "dayEn" : "dayEs"]}
-                          </span>
-                          <span
-                            className={
-                              h.closed
-                                ? "text-luxury-cream/40"
-                                : "text-luxury-gold"
-                            }
-                          >
+                        <div key={h.dayEn} className="flex justify-between text-sm gap-4">
+                          <span className="text-luxury-cream/70">{h[locale === "en" ? "dayEn" : "dayEs"]}</span>
+                          <span className={h.closed ? "text-luxury-cream/40" : "text-luxury-gold"}>
                             {h.closed ? t("location.closed") : h.hours}
                           </span>
                         </div>
@@ -85,38 +105,21 @@ export default function Location() {
                 </div>
               </div>
 
-              <div className="glass-card p-6">
-                <div className="flex items-start gap-4">
-                  <Phone className="w-6 h-6 text-luxury-gold shrink-0 mt-1" />
+              <div className="glass-card p-5">
+                <div className="flex items-start gap-3">
+                  <Phone className="w-5 h-5 text-luxury-gold shrink-0 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-luxury-cream mb-2">
-                      {t("location.contact")}
-                    </h4>
-                    <a
-                      href={`tel:${businessInfo.phone}`}
-                      className="block text-luxury-cream/70 hover:text-luxury-gold transition-colors mb-1"
-                    >
+                    <h4 className="font-semibold text-luxury-cream mb-2">{t("location.contact")}</h4>
+                    <a href={`tel:${businessInfo.phone}`} className="block text-luxury-cream/70 hover:text-luxury-gold transition-colors text-sm mb-1">
                       {businessInfo.phone}
                     </a>
-                    <a
-                      href={`mailto:${businessInfo.email}`}
-                      className="flex items-center gap-2 text-luxury-cream/70 hover:text-luxury-gold transition-colors"
-                    >
-                      <Mail className="w-4 h-4" />
+                    <a href={`mailto:${businessInfo.email}`} className="flex items-center gap-2 text-luxury-cream/70 hover:text-luxury-gold transition-colors text-sm">
+                      <Mail className="w-3.5 h-3.5" />
                       {businessInfo.email}
                     </a>
                   </div>
                 </div>
               </div>
-
-              <Button
-                href={businessInfo.mapDirectionsUrl}
-                size="lg"
-                className="w-full"
-              >
-                <MapPin className="w-4 h-4 mr-2" />
-                {t("location.directions")}
-              </Button>
             </div>
           </AnimatedSection>
         </div>

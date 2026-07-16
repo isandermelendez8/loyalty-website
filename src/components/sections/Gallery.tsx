@@ -9,9 +9,9 @@ import { galleryItems } from "@/data/gallery";
 import SectionTitle, { AnimatedSection } from "../ui/SectionTitle";
 import { useLockBody } from "@/hooks/useInView";
 
-type Category = "all" | "haircuts" | "tattoos" | "studio" | "beforeafter";
+type Category = "all" | "braids" | "piercings" | "hair" | "studio" | "beforeafter";
 
-const categories: Category[] = ["all", "haircuts", "tattoos", "studio", "beforeafter"];
+const categories: Category[] = ["all", "braids", "piercings", "hair", "studio", "beforeafter"];
 
 export default function Gallery() {
   const { locale, t } = useLanguage();

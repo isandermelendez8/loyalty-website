@@ -14,7 +14,9 @@ export const businessInfo: BusinessInfo = {
   zip: "33140",
   country: "USA",
   mapEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.234567890123!2d-80.1234567!3d25.8123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDQ4JzQ0LjQiTiA4MMKwMDcnMjQuNCJX!5e0!3m2!1sen!2sus!4v1234567890",
+    "https://maps.google.com/maps?q=2847+Collins+Avenue,+Miami+Beach,+FL+33140&hl=en&z=15&output=embed",
+  mapLinkUrl:
+    "https://www.google.com/maps/search/?api=1&query=2847+Collins+Avenue,+Miami+Beach,+FL+33140",
   mapDirectionsUrl:
     "https://www.google.com/maps/dir/?api=1&destination=2847+Collins+Avenue,+Miami+Beach,+FL+33140",
   hours: [

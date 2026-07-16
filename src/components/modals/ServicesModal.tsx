@@ -40,34 +40,43 @@ export default function ServicesModal({ isOpen, onClose }: ServicesModalProps) {
                 return (
                   <div
                     key={service.id}
-                    className="flex gap-4 glass p-4 rounded-xl"
+                    className={`flex gap-4 glass p-4 rounded-xl relative ${service.comingSoon ? "opacity-70" : ""}`}
                   >
                     <div className="relative w-20 h-20 rounded-lg overflow-hidden shrink-0">
                       <Image
                         src={service.image}
                         alt={names[locale]}
                         fill
-                        className="object-cover"
+                        className={`object-cover ${service.comingSoon ? "grayscale-[40%]" : ""}`}
                         sizes="80px"
                       />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h4 className="font-semibold text-luxury-cream text-sm truncate">
-                        {names[locale]}
-                      </h4>
+                      <div className="flex items-center gap-2">
+                        <h4 className="font-semibold text-luxury-cream text-sm truncate">
+                          {names[locale]}
+                        </h4>
+                        {service.comingSoon && (
+                          <span className="px-2 py-0.5 rounded-full bg-luxury-gold/20 text-luxury-gold text-[10px] font-bold uppercase shrink-0">
+                            {t("services.comingSoon")}
+                          </span>
+                        )}
+                      </div>
                       <p className="text-luxury-cream/50 text-xs mt-1 line-clamp-2">
                         {names[locale === "en" ? "descEn" : "descEs"]}
                       </p>
-                      <div className="flex items-center gap-3 mt-2 text-xs">
-                        <span className="flex items-center gap-1 text-luxury-gold">
-                          <DollarSign className="w-3 h-3" />
-                          {service[locale === "en" ? "priceEn" : "priceEs"]}
-                        </span>
-                        <span className="flex items-center gap-1 text-luxury-cream/50">
-                          <Clock className="w-3 h-3" />
-                          {service[locale === "en" ? "durationEn" : "durationEs"]}
-                        </span>
-                      </div>
+                      {!service.comingSoon && (
+                        <div className="flex items-center gap-3 mt-2 text-xs">
+                          <span className="flex items-center gap-1 text-luxury-gold">
+                            <DollarSign className="w-3 h-3" />
+                            {service[locale === "en" ? "priceEn" : "priceEs"]}
+                          </span>
+                          <span className="flex items-center gap-1 text-luxury-cream/50">
+                            <Clock className="w-3 h-3" />
+                            {service[locale === "en" ? "durationEn" : "durationEs"]}
+                          </span>
+                        </div>
+                      )}
                     </div>
                   </div>
                 );
@@ -75,6 +84,7 @@ export default function ServicesModal({ isOpen, onClose }: ServicesModalProps) {
             </div>
           </div>
         ))}
+        <p className="text-center text-luxury-cream/40 text-sm py-2">{t("services.moreComingSoon")}</p>
       </div>
       <div className="mt-6 pt-4 border-t border-luxury-border/30">
         <Button href="#booking" className="w-full" onClick={onClose}>
