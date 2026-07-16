@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Globe } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useScrollY } from "@/hooks/useInView";
-import Button from "./ui/Button";
+import Button from "../ui/Button";
 
 const navLinks = [
   { key: "nav.home", href: "#home" },
