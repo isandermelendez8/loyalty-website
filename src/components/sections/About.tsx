@@ -22,7 +22,7 @@ export default function About() {
             <div className="relative h-80 lg:h-full min-h-[320px] rounded-2xl overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=80"
-                alt="LOYALTY Studio Interior"
+                alt="LOYALTY Women's Beauty Studio"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

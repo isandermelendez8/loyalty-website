@@ -15,23 +15,23 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "LOYALTY | Premium Beauty & Lifestyle Services",
+  title: "LOYALTY | Luxury Beauty Studio for Women",
   description:
-    "LOYALTY offers premium beauty and lifestyle services in Miami Beach. Haircuts, styling, tattoos, piercings, and beauty treatments by award-winning professionals.",
+    "LOYALTY is a luxury women's beauty studio in Miami Beach. Hair styling, beauty treatments, tattoos, piercings, and self-care by expert female professionals.",
   keywords: [
-    "barbershop",
-    "salon",
-    "tattoo studio",
-    "beauty services",
+    "women salon",
+    "beauty studio",
+    "women only salon",
     "Miami Beach",
     "LOYALTY",
-    "haircuts",
-    "piercings",
+    "hair styling",
+    "women tattoos",
+    "beauty services",
   ],
   openGraph: {
-    title: "LOYALTY | Premium Beauty & Lifestyle Services",
+    title: "LOYALTY | Luxury Beauty Studio for Women",
     description:
-      "Premium beauty and lifestyle services in Miami Beach. Book your appointment today.",
+      "A luxury beauty sanctuary designed exclusively for women in Miami Beach. Book your appointment today.",
     type: "website",
     locale: "en_US",
   },

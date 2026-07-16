@@ -14,15 +14,16 @@ export const translations: Record<Locale, Record<string, string>> = {
     "nav.gallery": "Gallery",
 
     // Hero
-    "hero.slogan": "Premium Beauty & Lifestyle Services",
-    "hero.subtitle": "Where style meets excellence. Experience luxury grooming, artistry, and personal care in Miami Beach.",
+    "hero.badge": "Women Only",
+    "hero.slogan": "Luxury Beauty for Women",
+    "hero.subtitle": "A sanctuary designed exclusively for women. Experience premium hair, beauty, tattoos, and self-care in Miami Beach.",
     "hero.book": "Book Now",
     "hero.contact": "Contact Us",
     "hero.scroll": "Scroll to explore",
 
     // Services
     "services.title": "Our Services",
-    "services.subtitle": "Discover our premium range of beauty and lifestyle services",
+    "services.subtitle": "Premium services crafted exclusively for women",
     "services.price": "Price",
     "services.duration": "Duration",
     "services.book": "Book",
@@ -75,7 +76,7 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     // Reviews
     "reviews.title": "Client Reviews",
-    "reviews.subtitle": "What our clients say about their LOYALTY experience",
+    "reviews.subtitle": "What our women say about their LOYALTY experience",
     "reviews.leave": "Leave a Review",
     "reviews.form.title": "Share Your Experience",
     "reviews.form.name": "Your Name",
@@ -89,18 +90,18 @@ export const translations: Record<Locale, Record<string, string>> = {
     "about.title": "About LOYALTY",
     "about.subtitle": "Our story of passion, artistry, and dedication",
     "about.story.title": "Our Story",
-    "about.story.text": "Founded in the heart of Miami Beach, LOYALTY was born from a vision to create a sanctuary where artistry meets personal care. What started as a small barbershop has evolved into a full-service beauty and lifestyle destination, serving clients who demand nothing but the best.",
+    "about.story.text": "Founded in Miami Beach, LOYALTY is a luxury women's studio born from a vision to create a safe, beautiful sanctuary where every woman feels empowered. We offer premium hair, beauty, tattoo, and piercing services in an elegant space designed exclusively for women.",
     "about.mission.title": "Our Mission",
-    "about.mission.text": "To deliver exceptional beauty and lifestyle services in an environment of luxury, comfort, and creativity. We believe every client deserves a personalized experience that leaves them feeling confident and renewed.",
-    "about.why.title": "Why Choose LOYALTY",
-    "about.why.1": "Award-winning professionals",
-    "about.why.2": "Premium products & tools",
-    "about.why.3": "Sterile & modern environment",
-    "about.why.4": "Personalized consultations",
+    "about.mission.text": "To empower every woman through exceptional beauty services in a luxurious, welcoming environment. We believe you deserve to feel confident, beautiful, and completely at ease.",
+    "about.why.title": "Why Women Choose LOYALTY",
+    "about.why.1": "Exclusively for women",
+    "about.why.2": "Award-winning female professionals",
+    "about.why.3": "Safe & serene environment",
+    "about.why.4": "Personalized beauty consultations",
     "about.why.5": "Flexible booking system",
     "about.why.6": "Bilingual service (EN/ES)",
     "about.team.title": "Meet Our Team",
-    "about.team.subtitle": "Talented professionals dedicated to your transformation",
+    "about.team.subtitle": "Talented women dedicated to your beauty and confidence",
 
     // Location
     "location.title": "Visit Us",
@@ -128,13 +129,13 @@ export const translations: Record<Locale, Record<string, string>> = {
     "gallery.title": "Our Gallery",
     "gallery.subtitle": "Explore our work and studio",
     "gallery.all": "All",
-    "gallery.haircuts": "Haircuts",
+    "gallery.haircuts": "Hair",
     "gallery.tattoos": "Tattoos",
     "gallery.studio": "Studio",
     "gallery.beforeafter": "Before & After",
 
     // Footer
-    "footer.tagline": "Premium Beauty & Lifestyle Services",
+    "footer.tagline": "Luxury Beauty Studio for Women",
     "footer.quickLinks": "Quick Links",
     "footer.services": "Services",
     "footer.contact": "Contact",
@@ -160,15 +161,16 @@ export const translations: Record<Locale, Record<string, string>> = {
     "nav.gallery": "Galería",
 
     // Hero
-    "hero.slogan": "Servicios Premium de Belleza y Estilo de Vida",
-    "hero.subtitle": "Donde el estilo se encuentra con la excelencia. Experimenta arreglo de lujo, arte y cuidado personal en Miami Beach.",
+    "hero.badge": "Solo Mujeres",
+    "hero.slogan": "Belleza de Lujo para Mujeres",
+    "hero.subtitle": "Un santuario diseñado exclusivamente para mujeres. Experimenta cabello, belleza, tatuajes y autocuidado premium en Miami Beach.",
     "hero.book": "Reservar Ahora",
     "hero.contact": "Contáctanos",
     "hero.scroll": "Desplázate para explorar",
 
     // Services
     "services.title": "Nuestros Servicios",
-    "services.subtitle": "Descubre nuestra gama premium de servicios de belleza y estilo de vida",
+    "services.subtitle": "Servicios premium creados exclusivamente para mujeres",
     "services.price": "Precio",
     "services.duration": "Duración",
     "services.book": "Reservar",
@@ -221,7 +223,7 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     // Reviews
     "reviews.title": "Reseñas de Clientes",
-    "reviews.subtitle": "Lo que nuestros clientes dicen sobre su experiencia en LOYALTY",
+    "reviews.subtitle": "Lo que nuestras clientas dicen sobre su experiencia en LOYALTY",
     "reviews.leave": "Dejar una Reseña",
     "reviews.form.title": "Comparte Tu Experiencia",
     "reviews.form.name": "Tu Nombre",
@@ -235,18 +237,18 @@ export const translations: Record<Locale, Record<string, string>> = {
     "about.title": "Sobre LOYALTY",
     "about.subtitle": "Nuestra historia de pasión, arte y dedicación",
     "about.story.title": "Nuestra Historia",
-    "about.story.text": "Fundado en el corazón de Miami Beach, LOYALTY nació de una visión para crear un santuario donde el arte se encuentra con el cuidado personal. Lo que comenzó como una pequeña barbería ha evolucionado en un destino completo de belleza y estilo de vida, sirviendo a clientes que exigen lo mejor.",
+    "about.story.text": "Fundado en Miami Beach, LOYALTY es un estudio de lujo para mujeres nacido de la visión de crear un santuario seguro y hermoso donde cada mujer se sienta empoderada. Ofrecemos servicios premium de cabello, belleza, tatuajes y piercings en un espacio elegante diseñado exclusivamente para mujeres.",
     "about.mission.title": "Nuestra Misión",
-    "about.mission.text": "Entregar servicios excepcionales de belleza y estilo de vida en un ambiente de lujo, comodidad y creatividad. Creemos que cada cliente merece una experiencia personalizada que lo deje sintiéndose seguro y renovado.",
-    "about.why.title": "Por Qué Elegir LOYALTY",
-    "about.why.1": "Profesionales galardonados",
-    "about.why.2": "Productos y herramientas premium",
-    "about.why.3": "Ambiente estéril y moderno",
-    "about.why.4": "Consultas personalizadas",
+    "about.mission.text": "Empoderar a cada mujer a través de servicios de belleza excepcionales en un ambiente lujoso y acogedor. Creemos que mereces sentirte segura, hermosa y completamente a gusto.",
+    "about.why.title": "Por Qué las Mujeres Eligen LOYALTY",
+    "about.why.1": "Exclusivamente para mujeres",
+    "about.why.2": "Profesionales femeninas galardonadas",
+    "about.why.3": "Ambiente seguro y sereno",
+    "about.why.4": "Consultas de belleza personalizadas",
     "about.why.5": "Sistema de reservas flexible",
     "about.why.6": "Servicio bilingüe (EN/ES)",
     "about.team.title": "Conoce Nuestro Equipo",
-    "about.team.subtitle": "Profesionales talentosos dedicados a tu transformación",
+    "about.team.subtitle": "Mujeres talentosas dedicadas a tu belleza y confianza",
 
     // Location
     "location.title": "Visítanos",
@@ -274,13 +276,13 @@ export const translations: Record<Locale, Record<string, string>> = {
     "gallery.title": "Nuestra Galería",
     "gallery.subtitle": "Explora nuestro trabajo y estudio",
     "gallery.all": "Todos",
-    "gallery.haircuts": "Cortes",
+    "gallery.haircuts": "Cabello",
     "gallery.tattoos": "Tatuajes",
     "gallery.studio": "Estudio",
     "gallery.beforeafter": "Antes y Después",
 
     // Footer
-    "footer.tagline": "Servicios Premium de Belleza y Estilo de Vida",
+    "footer.tagline": "Estudio de Belleza de Lujo para Mujeres",
     "footer.quickLinks": "Enlaces Rápidos",
     "footer.services": "Servicios",
     "footer.contact": "Contacto",

@@ -45,11 +45,11 @@ CREATE INDEX IF NOT EXISTS idx_appointments_reminder ON appointments(appointment
 
 -- Seed default employees
 INSERT INTO employees (id, name, email, role_en, role_es, image, specialties) VALUES
-  ('marco', 'Marco Rivera', 'marco@loyaltystudio.com', 'Master Barber', 'Barbero Maestro', 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80', ARRAY['haircuts', 'styling']),
-  ('sofia', 'Sofia Mendez', 'sofia@loyaltystudio.com', 'Senior Stylist', 'Estilista Senior', 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80', ARRAY['styling', 'beauty']),
-  ('diego', 'Diego Santos', 'diego@loyaltystudio.com', 'Tattoo Artist', 'Artista de Tatuajes', 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80', ARRAY['tattoos']),
+  ('sofia', 'Sofia Mendez', 'sofia@loyaltystudio.com', 'Lead Hair Stylist', 'Estilista Principal', 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80', ARRAY['haircuts', 'styling']),
+  ('valentina', 'Valentina Cruz', 'valentina@loyaltystudio.com', 'Beauty & Skincare Expert', 'Experta en Belleza y Piel', 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80', ARRAY['beauty', 'styling']),
+  ('camila', 'Camila Reyes', 'camila@loyaltystudio.com', 'Tattoo Artist', 'Artista de Tatuajes', 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80', ARRAY['tattoos']),
   ('luna', 'Luna Torres', 'luna@loyaltystudio.com', 'Piercing Specialist', 'Especialista en Piercings', 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80', ARRAY['piercings']),
-  ('valentina', 'Valentina Cruz', 'valentina@loyaltystudio.com', 'Beauty Expert', 'Experta en Belleza', 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80', ARRAY['beauty', 'styling'])
+  ('alessia', 'Alessia Romero', 'alessia@loyaltystudio.com', 'Color Specialist', 'Especialista en Color', 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80', ARRAY['styling', 'haircuts'])
 ON CONFLICT (id) DO NOTHING;
 
 -- Row Level Security

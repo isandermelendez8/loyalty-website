@@ -16,8 +16,8 @@ export default function Hero() {
     >
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1585747860715-2ba37c788b7f?w=1920&q=80"
-          alt="LOYALTY Studio"
+          src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&q=80"
+          alt="LOYALTY Women's Beauty Studio"
           fill
           priority
           className="object-cover"
@@ -37,10 +37,19 @@ export default function Hero() {
             initial={{ opacity: 0, letterSpacing: "0.5em" }}
             animate={{ opacity: 1, letterSpacing: "0.3em" }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="text-luxury-gold text-sm sm:text-base uppercase mb-4 font-medium"
+            className="text-luxury-gold text-sm sm:text-base uppercase mb-2 font-medium"
           >
             Miami Beach
           </motion.p>
+
+          <motion.span
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="inline-block px-4 py-1.5 mb-4 rounded-full border border-luxury-gold/40 bg-luxury-gold/10 text-luxury-gold text-xs sm:text-sm uppercase tracking-widest font-medium"
+          >
+            {t("hero.badge")}
+          </motion.span>
 
           <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-display font-bold gold-text mb-6 tracking-wider">
             LOYALTY
