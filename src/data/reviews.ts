@@ -1,0 +1,58 @@
+import { Review } from "@/types";
+
+export const reviews: Review[] = [
+  {
+    id: "1",
+    name: "James Mitchell",
+    rating: 5,
+    textEn: "Best haircut experience, professional and clean environment. Marco is a true artist.",
+    textEs: "La mejor experiencia de corte, ambiente profesional y limpio. Marco es un verdadero artista.",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+    service: "haircuts",
+  },
+  {
+    id: "2",
+    name: "Isabella Rodriguez",
+    rating: 5,
+    textEn: "Sofia transformed my hair completely. The color work is absolutely stunning!",
+    textEs: "Sofia transformó mi cabello completamente. ¡El trabajo de color es absolutamente impresionante!",
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80",
+    service: "styling",
+  },
+  {
+    id: "3",
+    name: "Michael Chen",
+    rating: 5,
+    textEn: "Diego's tattoo work is incredible. Clean studio, amazing attention to detail.",
+    textEs: "El trabajo de tatuajes de Diego es increíble. Estudio limpio, atención increíble al detalle.",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+    service: "tattoos",
+  },
+  {
+    id: "4",
+    name: "Emma Thompson",
+    rating: 5,
+    textEn: "Luna made my piercing experience so comfortable. Highly recommend LOYALTY!",
+    textEs: "Luna hizo mi experiencia de piercing muy cómoda. ¡Recomiendo LOYALTY altamente!",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80",
+    service: "piercings",
+  },
+  {
+    id: "5",
+    name: "Carlos Vega",
+    rating: 5,
+    textEn: "Premium service from start to finish. The fade was perfect and the vibe is unmatched.",
+    textEs: "Servicio premium de principio a fin. El degradado fue perfecto y el ambiente es inigualable.",
+    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&q=80",
+    service: "haircuts",
+  },
+  {
+    id: "6",
+    name: "Aria Williams",
+    rating: 5,
+    textEn: "Valentina's facial treatment left my skin glowing. This place is a hidden gem in Miami.",
+    textEs: "El tratamiento facial de Valentina dejó mi piel radiante. Este lugar es una joya oculta en Miami.",
+    image: "https://images.unsplash.com/photo-1531746020798-e6953b6e72e2?w=200&q=80",
+    service: "beauty",
+  },
+];

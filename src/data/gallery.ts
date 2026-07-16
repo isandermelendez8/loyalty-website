@@ -1,0 +1,88 @@
+import { GalleryItem } from "@/types";
+
+export const galleryItems: GalleryItem[] = [
+  {
+    id: "g1",
+    image: "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600&q=80",
+    category: "haircuts",
+    titleEn: "Precision Fade",
+    titleEs: "Degradado de Precisión",
+  },
+  {
+    id: "g2",
+    image: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80",
+    category: "haircuts",
+    titleEn: "Classic Cut",
+    titleEs: "Corte Clásico",
+  },
+  {
+    id: "g3",
+    image: "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&q=80",
+    category: "haircuts",
+    titleEn: "Beard Styling",
+    titleEs: "Estilizado de Barba",
+  },
+  {
+    id: "g4",
+    image: "https://images.unsplash.com/photo-1611501275019-9b5ccb8ee83e?w=600&q=80",
+    category: "tattoos",
+    titleEn: "Fine Line Art",
+    titleEs: "Arte de Línea Fina",
+  },
+  {
+    id: "g5",
+    image: "https://images.unsplash.com/photo-1590246814883-05c672a5d4c0?w=600&q=80",
+    category: "tattoos",
+    titleEn: "Custom Design",
+    titleEs: "Diseño Personalizado",
+  },
+  {
+    id: "g6",
+    image: "https://images.unsplash.com/photo-1562962230-16e4623d36e6?w=600&q=80",
+    category: "tattoos",
+    titleEn: "Sleeve Work",
+    titleEs: "Trabajo de Manga",
+  },
+  {
+    id: "g7",
+    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80",
+    category: "studio",
+    titleEn: "Our Studio",
+    titleEs: "Nuestro Estudio",
+  },
+  {
+    id: "g8",
+    image: "https://images.unsplash.com/photo-1585747860715-2ba37c788b7f?w=600&q=80",
+    category: "studio",
+    titleEn: "Barber Station",
+    titleEs: "Estación de Barbería",
+  },
+  {
+    id: "g9",
+    image: "https://images.unsplash.com/photo-1633681926022-84c23e8cb04d?w=600&q=80",
+    category: "studio",
+    titleEn: "Tattoo Lounge",
+    titleEs: "Sala de Tatuajes",
+  },
+  {
+    id: "g10",
+    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80",
+    category: "beforeafter",
+    titleEn: "Color Transformation",
+    titleEs: "Transformación de Color",
+  },
+  {
+    id: "g11",
+    image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&q=80",
+    category: "beforeafter",
+    titleEn: "Style Makeover",
+    titleEs: "Cambio de Estilo",
+  },
+  {
+    id: "g12",
+    image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d880?w=600&q=80",
+    category: "beforeafter",
+    titleEn: "Skin Glow",
+    titleEs: "Piel Radiante",
+  },
+];
