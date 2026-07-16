@@ -134,7 +134,6 @@ export async function sendAdminNotification(data: {
       to: adminEmail,
       subject: `New Booking: ${data.customerName} - ${data.serviceName}`,
       html: employeeNotificationHtml({
-        to: adminEmail,
         customerName: data.customerName,
         customerPhone: data.customerPhone,
         customerEmail: "",
